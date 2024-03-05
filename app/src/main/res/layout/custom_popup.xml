@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:background="#fff"
     android:orientation="vertical"
     android:padding="20dp">
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:visibility="gone"
@@ -16,14 +16,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_image"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginRight="12dp"
             android:background="#ddd" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_name"
             android:layout_width="match_parent"
             android:layout_height="25dp"
@@ -32,7 +32,7 @@
             android:textColor="#222"
             android:textSize="18sp" />
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="match_parent"
             android:layout_height="25dp"
             android:layout_below="@id/tv_name"
@@ -45,7 +45,7 @@
             android:textSize="14sp" />
     </RelativeLayout>
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
@@ -57,21 +57,21 @@
         android:textSize="16sp" />
 
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
         android:text="测试输入框会不会被软键盘盖住" />
 
-    <EditText
+    <androidx.appcompat.widget.AppCompatEditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="35dp"
         android:layout_marginBottom="15dp"
         android:text="测试输入框会不会被软键盘盖住" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_close"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -85,4 +85,4 @@
         android:paddingBottom="12dp"
         android:text="关闭"
         android:textColor="@color/colorPrimary" />
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

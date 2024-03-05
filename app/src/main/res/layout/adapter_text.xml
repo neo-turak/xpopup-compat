@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.AppCompatTextView xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/tv_text"
     android:textSize="20sp"
     android:textColor="#f00"
@@ -8,4 +8,4 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-</TextView>
+</androidx.appcompat.widget.AppCompatTextView>

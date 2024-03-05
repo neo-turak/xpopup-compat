@@ -5,13 +5,13 @@
     app:cardCornerRadius="20dp"
     app:cardBackgroundColor="#f0a0ca"
     android:layout_height="wrap_content">
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -28,7 +28,7 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_content"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,7 +38,7 @@
             android:textColor="@color/_xpopup_content_color"
             android:textSize="16sp" />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:id="@+id/et_input"
             android:background="@null"
             android:lines="4"
@@ -49,13 +49,13 @@
             android:layout_width="match_parent"
             android:layout_height="1dp"/>
 
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:orientation="horizontal">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_cancel"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
@@ -68,7 +68,7 @@
                 android:text="@string/xpopup_cancel"
                 android:textSize="16sp" />
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_confirm"
                 android:paddingTop="10dp"
                 android:paddingBottom="10dp"
@@ -79,7 +79,7 @@
                 android:gravity="center"
                 android:text="@string/xpopup_ok"
                 android:textSize="16sp" />
-        </LinearLayout>
-    </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.cardview.widget.CardView>

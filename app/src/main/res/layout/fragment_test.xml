@@ -3,12 +3,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv"
         android:textSize="20sp"
         android:textColor="#444"
         android:padding="30dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
-    </TextView>
+    </androidx.appcompat.widget.AppCompatTextView>
 </androidx.core.widget.NestedScrollView>

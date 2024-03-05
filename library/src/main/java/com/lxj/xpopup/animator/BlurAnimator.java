@@ -15,7 +15,7 @@ import com.lxj.xpopup.util.XPopupUtils;
  */
 public class BlurAnimator extends PopupAnimator {
 
-    private FloatEvaluator evaluate = new FloatEvaluator();
+    private final FloatEvaluator evaluate = new FloatEvaluator();
     public int shadowColor;
     public BlurAnimator(View target,  int shadowColor) {
         super(target, 0);
@@ -35,33 +35,11 @@ public class BlurAnimator extends PopupAnimator {
 
     @Override
     public void animateShow() {
-        //有性能问题
-//        ValueAnimator animator = ValueAnimator.ofFloat(0,1);
-//        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-//            @Override
-//            public void onAnimationUpdate(ValueAnimator animation) {
-//                float fraction = animation.getAnimatedFraction();
-//                Bitmap blurBmp = ImageUtils.renderScriptBlur(decorBitmap, evaluate.evaluate(0f, 25f, fraction), false);
-//                targetView.setBackground(new BitmapDrawable(targetView.getResources(), blurBmp));
-//            }
-//        });
-//        animator.setInterpolator(new LinearInterpolator());
-//        animator.setDuration(XPopup.getAnimationDuration()).start();
+
     }
 
     @Override
     public void animateDismiss() {
-//        ValueAnimator animator = ValueAnimator.ofFloat(1,0);
-//        animator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
-//            @Override
-//            public void onAnimationUpdate(ValueAnimator animation) {
-//                float fraction = animation.getAnimatedFraction();
-//                Bitmap blurBmp = ImageUtils.renderScriptBlur(decorBitmap, evaluate.evaluate(0f, 25f, fraction), false);
-//                targetView.setBackground(new BitmapDrawable(targetView.getResources(), blurBmp));
-//            }
-//        });
-//        animator.setInterpolator(new LinearInterpolator());
-//        animator.setDuration(XPopup.getAnimationDuration()).start();
     }
 
 

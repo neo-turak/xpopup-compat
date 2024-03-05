@@ -5,18 +5,18 @@
     app:cardCornerRadius="20dp"
     app:cardBackgroundColor="#f0a0ca"
     android:layout_height="wrap_content">
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp">
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_text"
             android:text="自定义的Attach弹窗布局"
             android:padding="10dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-        <ImageView
+        <androidx.appcompat.widget.AppCompatImageView
             android:id="@+id/iv_image"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
@@ -24,6 +24,6 @@
             android:id="@+id/recyclerView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-    </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
 </androidx.cardview.widget.CardView>

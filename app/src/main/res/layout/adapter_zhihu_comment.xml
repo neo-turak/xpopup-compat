@@ -5,14 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content">
 
-    <ImageView
+    <androidx.appcompat.widget.AppCompatImageView
         android:layout_marginEnd="12dp"
         android:id="@+id/avatar"
         android:background="@drawable/bg_circle"
         android:layout_width="55dp"
         android:layout_height="55dp" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:text="知乎大神"
         android:textColor="#111"
         android:textSize="17sp"
@@ -21,7 +21,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:layout_marginTop="8dp"
         android:layout_toEndOf="@id/avatar"
         android:layout_below="@id/name"
@@ -32,7 +32,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
-    <Button
+    <androidx.appcompat.widget.AppCompatButton
         android:text="删除"
         android:layout_marginTop="10dp"
         android:id="@+id/btnDel"

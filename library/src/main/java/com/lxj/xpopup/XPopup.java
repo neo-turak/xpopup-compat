@@ -317,10 +317,10 @@ public class XPopup {
         }
 
         /**
-         * 设置最大高度，如果重写了弹窗的getMaxHeight，则以重写的为准
          *
-         * @param maxHeight
-         * @return
+         *
+         * @param maxHeight 设置最大高度，如果重写了弹窗的getMaxHeight，则以重写的为准
+         * @return Builder
          */
         public Builder maxHeight(int maxHeight) {
             this.popupInfo.maxHeight = maxHeight;

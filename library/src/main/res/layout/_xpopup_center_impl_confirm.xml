@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:paddingTop="15dp"
     android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_title"
         android:textSize="20sp"
         android:textColor="@color/_xpopup_title_color"
@@ -22,14 +22,14 @@
         android:layout_width="match_parent"
         android:layout_weight="1"
         android:layout_height="0dp">
-        <LinearLayout
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:paddingTop="10dp"
             android:paddingBottom="15dp"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <TextView
+            <androidx.appcompat.widget.AppCompatTextView
                 android:id="@+id/tv_content"
                 android:paddingStart="20dp"
                 android:paddingEnd="20dp"
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 android:text="" />
 
-            <EditText
+            <androidx.appcompat.widget.AppCompatEditText
                 android:id="@+id/et_input"
                 tools:visibility="visible"
                 android:visibility="gone"
@@ -52,7 +52,7 @@
                 android:textColor="@color/_xpopup_content_color"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" />
-        </LinearLayout>
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.core.widget.NestedScrollView>
 
 
@@ -61,12 +61,12 @@
         android:id="@+id/xpopup_divider1"
         android:background="@color/_xpopup_list_divider"
         android:layout_height=".5dp"/>
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:gravity="end"
         android:orientation="horizontal">
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/tv_cancel"
             android:textSize="16sp"
             android:text="@string/xpopup_cancel"
@@ -85,7 +85,7 @@
             android:background="@color/_xpopup_list_divider"
             android:layout_height="match_parent"/>
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:textSize="16sp"
             android:id="@+id/tv_confirm"
             android:text="@string/xpopup_ok"
@@ -96,5 +96,5 @@
             android:layout_width="0dp"
             android:layout_weight="1"
             android:layout_height="match_parent" />
-    </LinearLayout>
-</LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

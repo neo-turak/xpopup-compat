@@ -5,12 +5,12 @@
     android:background="#eeeeee"
     android:layout_height="300dp">
 
-    <LinearLayout
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <TextView
+        <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/text"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -20,12 +20,12 @@
             android:textColor="#111"
             android:textSize="18sp" />
 
-        <EditText
+        <androidx.appcompat.widget.AppCompatEditText
             android:hint="测试输入交互"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/ch"
             android:layout_marginTop="10dp"
             android:layout_width="match_parent"
@@ -33,11 +33,11 @@
             android:layout_marginHorizontal="20dp"
             android:text="改变高度" />
 
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnClose"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
             android:text="关闭" />
-    </LinearLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
 </androidx.core.widget.NestedScrollView>

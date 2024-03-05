@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
-    <TextView
+    <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/tv_title"
         android:textStyle="bold"
         android:textColor="@color/_xpopup_title_color"
@@ -29,4 +29,4 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:overScrollMode="never" />
-</LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>
